@@ -1,0 +1,80 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.9.2
+2 info using node@v22.17.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/wa7id/Desktop/Goyalty/.npmrc
+5 silly config load:file:/Users/wa7id/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" "./tmp-npm-cache" "--legacy-peer-deps"
+9 verbose logfile logs-max:10 dir:/Users/wa7id/Desktop/Goyalty/tmp-npm-cache/_logs/2026-03-12T02_19_51_578Z-
+10 verbose logfile /Users/wa7id/Desktop/Goyalty/tmp-npm-cache/_logs/2026-03-12T02_19_51_578Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest framer-motion@^12.4.7
+15 silly packumentCache full:https://registry.npmjs.org/framer-motion cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json EPERM: operation not permitted, stat '/Users/wa7id/Desktop/Goyalty/node_modules'
+17 http cache https://registry.npmjs.org/framer-motion 24ms (cache hit)
+18 silly packumentCache full:https://registry.npmjs.org/framer-motion set size:9978564 disposed:false
+19 silly placeDep ROOT framer-motion@12.35.2 OK for: goyalty@0.1.0 want: ^12.4.7
+20 silly fetch manifest motion-dom@^12.35.2
+21 silly packumentCache full:https://registry.npmjs.org/motion-dom cache-miss
+22 silly fetch manifest motion-utils@^12.29.2
+23 silly packumentCache full:https://registry.npmjs.org/motion-utils cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/motion-utils 192ms (cache miss)
+25 silly packumentCache full:https://registry.npmjs.org/motion-utils set size:undefined disposed:false
+26 http fetch GET 200 https://registry.npmjs.org/motion-dom 265ms (cache miss)
+27 silly packumentCache full:https://registry.npmjs.org/motion-dom set size:undefined disposed:false
+28 silly placeDep ROOT motion-dom@12.35.2 OK for: framer-motion@12.35.2 want: ^12.35.2
+29 silly placeDep ROOT motion-utils@12.29.2 OK for: framer-motion@12.35.2 want: ^12.29.2
+30 silly reify moves {}
+31 verbose reify failed optional dependency /Users/wa7id/Desktop/Goyalty/node_modules/@tailwindcss/oxide-wasm32-wasi
+32 silly reify mark deleted [
+32 silly reify   '/Users/wa7id/Desktop/Goyalty/node_modules/@tailwindcss/oxide-wasm32-wasi'
+32 silly reify ]
+33 verbose stack Error: EPERM: operation not permitted, lstat '/Users/wa7id/Desktop/Goyalty/node_modules'
+33 verbose stack     at async lstat (node:internal/fs/promises:1028:18)
+33 verbose stack     at async #loadActual (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/load-actual.js:129:15)
+33 verbose stack     at async /usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:931:11
+33 verbose stack     at async Promise.allSettled (index 0)
+33 verbose stack     at async [reifyPackages] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:325:11)
+33 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:142:5)
+33 verbose stack     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:150:5)
+33 verbose stack     at async Npm.exec (/usr/local/lib/node_modules/npm/lib/npm.js:207:9)
+33 verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli/entry.js:74:5)
+34 error code EPERM
+35 error syscall lstat
+36 error path /Users/wa7id/Desktop/Goyalty/node_modules
+37 error errno -1
+38 error Error: EPERM: operation not permitted, lstat '/Users/wa7id/Desktop/Goyalty/node_modules'
+38 error     at async lstat (node:internal/fs/promises:1028:18)
+38 error     at async #loadActual (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/load-actual.js:129:15)
+38 error     at async /usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:931:11
+38 error     at async Promise.allSettled (index 0)
+38 error     at async [reifyPackages] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:325:11)
+38 error     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:142:5)
+38 error     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:150:5)
+38 error     at async Npm.exec (/usr/local/lib/node_modules/npm/lib/npm.js:207:9)
+38 error     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli/entry.js:74:5) {
+38 error   errno: -1,
+38 error   code: 'EPERM',
+38 error   syscall: 'lstat',
+38 error   path: '/Users/wa7id/Desktop/Goyalty/node_modules'
+38 error }
+39 error
+39 error The operation was rejected by your operating system.
+39 error It is likely you do not have the permissions to access this file as the current user
+39 error
+39 error If you believe this might be a permissions issue, please double-check the
+39 error permissions of the file and its containing directories, or try running
+39 error the command again as root/Administrator.
+40 silly unfinished npm timer reify 1773281991876
+41 silly unfinished npm timer reify:loadBundles 1773281992418
+42 verbose cwd /Users/wa7id/Desktop/Goyalty
+43 verbose os Darwin 25.3.0
+44 verbose node v22.17.0
+45 verbose npm  v10.9.2
+46 verbose exit -1
+47 verbose code -1
+48 error A complete log of this run can be found in: /Users/wa7id/Desktop/Goyalty/tmp-npm-cache/_logs/2026-03-12T02_19_51_578Z-debug-0.log

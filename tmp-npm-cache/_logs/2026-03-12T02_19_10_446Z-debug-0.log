@@ -1,0 +1,86 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.9.2
+2 info using node@v22.17.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/wa7id/Desktop/Goyalty/.npmrc
+5 silly config load:file:/Users/wa7id/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" "./tmp-npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/wa7id/Desktop/Goyalty/tmp-npm-cache/_logs/2026-03-12T02_19_10_446Z-
+10 verbose logfile /Users/wa7id/Desktop/Goyalty/tmp-npm-cache/_logs/2026-03-12T02_19_10_446Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest framer@^2.4.1
+15 silly packumentCache full:https://registry.npmjs.org/framer cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json EPERM: operation not permitted, stat '/Users/wa7id/Desktop/Goyalty/node_modules'
+17 http fetch GET 200 https://registry.npmjs.org/npm 642ms
+18 http fetch GET 200 https://registry.npmjs.org/framer 1911ms (cache miss)
+19 silly packumentCache full:https://registry.npmjs.org/framer set size:undefined disposed:false
+20 silly fetch manifest framer-motion@^12.4.7
+21 silly packumentCache full:https://registry.npmjs.org/framer-motion cache-miss
+22 http fetch GET 200 https://registry.npmjs.org/framer-motion 529ms (cache miss)
+23 silly packumentCache full:https://registry.npmjs.org/framer-motion set size:undefined disposed:false
+24 silly fetch manifest framer-motion@^10.13.1
+25 silly packumentCache full:https://registry.npmjs.org/framer-motion cache-miss
+26 http cache https://registry.npmjs.org/framer-motion 12ms (cache hit)
+27 silly packumentCache full:https://registry.npmjs.org/framer-motion set size:9978564 disposed:false
+28 silly fetch manifest @emotion/is-prop-valid@*
+29 silly packumentCache full:https://registry.npmjs.org/@emotion%2fis-prop-valid cache-miss
+30 http fetch GET 200 https://registry.npmjs.org/@emotion%2fis-prop-valid 109ms (cache miss)
+31 silly packumentCache full:https://registry.npmjs.org/@emotion%2fis-prop-valid set size:undefined disposed:false
+32 silly fetch manifest react@19.2.3
+33 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+34 http fetch GET 200 https://registry.npmjs.org/react 261ms (cache miss)
+35 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+36 silly fetch manifest react-dom@19.2.3
+37 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+38 http fetch GET 200 https://registry.npmjs.org/react-dom 457ms (cache miss)
+39 silly packumentCache full:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+40 verbose stack Error: unable to resolve dependency tree
+40 verbose stack     at #failPeerConflict (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1363:25)
+40 verbose stack     at #loadPeerSet (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1329:33)
+40 verbose stack     at async #buildDepStep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:904:11)
+40 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:181:7)
+40 verbose stack     at async Promise.all (index 1)
+40 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:131:5)
+40 verbose stack     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:150:5)
+40 verbose stack     at async Npm.exec (/usr/local/lib/node_modules/npm/lib/npm.js:207:9)
+40 verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli/entry.js:74:5)
+41 error code ERESOLVE
+42 error ERESOLVE unable to resolve dependency tree
+43 error
+44 error While resolving: goyalty@0.1.0
+44 error Found: framer-motion@12.35.2[2m[22m
+44 error [2mnode_modules/framer-motion[22m
+44 error   framer-motion@"^12.4.7" from the root project
+44 error
+44 error Could not resolve dependency:
+44 error [95mpeer[39m framer-motion@"^10.13.1" from framer@2.4.1[2m[22m
+44 error [2mnode_modules/framer[22m
+44 error   framer@"^2.4.1" from the root project
+44 error
+44 error Fix the upstream dependency conflict, or retry
+44 error this command with --force or --legacy-peer-deps
+44 error to accept an incorrect (and potentially broken) dependency resolution.
+45 error
+45 error
+45 error For a full report see:
+45 error /Users/wa7id/Desktop/Goyalty/tmp-npm-cache/_logs/2026-03-12T02_19_10_446Z-eresolve-report.txt
+46 silly unfinished npm timer reify 1773281950777
+47 silly unfinished npm timer reify:loadTrees 1773281950778
+48 silly unfinished npm timer idealTree:buildDeps 1773281950972
+49 silly unfinished npm timer idealTree:#root 1773281950972
+50 verbose cwd /Users/wa7id/Desktop/Goyalty
+51 verbose os Darwin 25.3.0
+52 verbose node v22.17.0
+53 verbose npm  v10.9.2
+54 notice
+54 notice New [31mmajor[39m version of npm available! [31m10.9.2[39m -> [34m11.11.1[39m
+54 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.11.1[39m
+54 notice To update run: [4mnpm install -g npm@11.11.1[24m
+54 notice  { force: true, [Symbol(proc-log.meta)]: true }
+55 verbose exit 1
+56 verbose code 1
+57 error A complete log of this run can be found in: /Users/wa7id/Desktop/Goyalty/tmp-npm-cache/_logs/2026-03-12T02_19_10_446Z-debug-0.log

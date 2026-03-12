@@ -1,0 +1,18 @@
+'Log files:
+/Users/wa7id/Desktop/Goyalty/tmp-npm-cache/_logs/2026-03-12T02_19_10_446Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: goyalty@0.1.0
+Found: framer-motion@12.35.2
+node_modules/framer-motion
+  framer-motion@"^12.4.7" from the root project
+
+Could not resolve dependency:
+peer framer-motion@"^10.13.1" from framer@2.4.1
+node_modules/framer
+  framer@"^2.4.1" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
